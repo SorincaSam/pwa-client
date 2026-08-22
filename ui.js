@@ -257,6 +257,7 @@ function renderVerses(container) {
                 </div>
             </div>
             
+            ${s && s.show ? `
             <div class="card-panel" style="margin-top:20px; padding:20px;">
                 <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
                     <div style="width:28px; height:28px; border-radius:8px; background:rgba(var(--color-leader-rgb),0.15); display:flex; align-items:center; justify-content:center;">
@@ -272,6 +273,7 @@ function renderVerses(container) {
                     <span style="font-size:12px; font-weight:600; color:var(--color-leader);">${s.speakerInfo}</span>
                 </div>
             </div>
+            ` : ''}
 
             <div style="margin-top:20px; display:flex; flex-direction:column; gap:12px;">
                 <p class="section-title">Link-uri rapide</p>
