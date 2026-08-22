@@ -9,8 +9,8 @@
             "color": "#e8650a",
             "gradFrom": "#e8650a",
             "gradTo": "#ff9c50",
-            "points": 2840,
-            "coins": 1540
+            "points": 0,
+            "coins": 0
         },
         {
             "id": 2,
@@ -21,8 +21,8 @@
             "color": "#e03030",
             "gradFrom": "#b01e1e",
             "gradTo": "#e03030",
-            "points": 3415,
-            "coins": 1250
+            "points": 0,
+            "coins": 0
         },
         {
             "id": 3,
@@ -33,46 +33,16 @@
             "color": "#3a7bd5",
             "gradFrom": "#1a4a9a",
             "gradTo": "#3a7bd5",
-            "points": 1990,
-            "coins": 980
+            "points": 0,
+            "coins": 0
         }
     ],
     "evolution": [
         {
-            "day": "D1",
-            "Leii": 42,
-            "Lupii": 30,
-            "Ursii": 10
-        },
-        {
-            "day": "D2",
-            "Leii": 80,
-            "Lupii": 20,
-            "Ursii": 90
-        },
-        {
-            "day": "D3",
-            "Leii": 300,
-            "Lupii": 210,
-            "Ursii": 80
-        },
-        {
-            "day": "D4",
-            "Leii": 10,
-            "Lupii": 10,
-            "Ursii": 10
-        },
-        {
-            "day": "D5",
-            "Leii": 10,
-            "Lupii": 10,
-            "Ursii": 10
-        },
-        {
-            "day": "Azi",
-            "Leii": 40,
-            "Lupii": 30,
-            "Ursii": 50
+            "day": "Ziua 1",
+            "Leii": 0,
+            "Lupii": 0,
+            "Ursii": 0
         }
     ],
     "activities": [
