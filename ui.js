@@ -1,5 +1,12 @@
 import { state, setActiveTab, setSelectedTeam, toggleActivity } from './store.js';
 
+const viewsCache = {
+    home: null,
+    compass: null,
+    verses: null,
+    teamDetail: null
+};
+
 export function renderApp() {
     const leader = state.ranked[0];
     if (leader) {
@@ -13,12 +20,41 @@ export function renderApp() {
 
     const viewContainer = document.getElementById('view-container');
     
+    // Hide all cached views
+    Array.from(viewContainer.children).forEach(child => child.style.display = 'none');
+
+    function getView(id) {
+        if (!viewsCache[id]) {
+            viewsCache[id] = document.createElement('div');
+            viewsCache[id].id = `view-${id}`;
+            viewContainer.appendChild(viewsCache[id]);
+        }
+        viewsCache[id].style.display = 'block';
+        return viewsCache[id];
+    }
+
     if (state.selectedTeam) {
-        renderTeamDetail(viewContainer, state.selectedTeam);
+        const container = getView('teamDetail');
+        renderTeamDetail(container, state.selectedTeam);
     } else {
-        if (state.activeTab === 'home') renderHome(viewContainer);
-        else if (state.activeTab === 'compass') renderExplore(viewContainer);
-        else if (state.activeTab === 'verses') renderVerses(viewContainer);
+        if (state.activeTab === 'home') {
+            const container = getView('home');
+            const currentActivityState = container.dataset.expandedActivity || 'null';
+            const newActivityState = String(state.expandedActivity);
+            
+            if (container.innerHTML === '' || currentActivityState !== newActivityState) {
+                renderHome(container);
+                container.dataset.expandedActivity = newActivityState;
+            }
+        }
+        else if (state.activeTab === 'compass') {
+            const container = getView('compass');
+            if (container.innerHTML === '') renderExplore(container);
+        }
+        else if (state.activeTab === 'verses') {
+            const container = getView('verses');
+            if (container.innerHTML === '') renderVerses(container);
+        }
     }
     
     // Initialize Lucide icons
