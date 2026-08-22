@@ -1,0 +1,17 @@
+{
+    "name": "My Decoupled PWA",
+    "short_name": "PWA App",
+    "description": "A standalone frontend PWA connecting to a remote backend.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#121212",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "icons/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}

@@ -1,0 +1,161 @@
+{
+    "teams": [
+        {
+            "id": 1,
+            "name": "Leii",
+            "emoji": "🦁",
+            "image": "teams-photos-41.jpg.jpeg",
+            "imageOffset": "center 60%",
+            "color": "#e8650a",
+            "gradFrom": "#e8650a",
+            "gradTo": "#ff9c50",
+            "points": 2840,
+            "coins": 1540
+        },
+        {
+            "id": 2,
+            "name": "Lupii",
+            "emoji": "🐺",
+            "image": "teams-photos-5.jpg.jpeg",
+            "imageOffset": "center 30%",
+            "color": "#e03030",
+            "gradFrom": "#b01e1e",
+            "gradTo": "#e03030",
+            "points": 3415,
+            "coins": 1250
+        },
+        {
+            "id": 3,
+            "name": "Ursii",
+            "emoji": "🐻",
+            "image": "teams-photos-60.jpg.jpeg",
+            "imageOffset": "center 60%",
+            "color": "#3a7bd5",
+            "gradFrom": "#1a4a9a",
+            "gradTo": "#3a7bd5",
+            "points": 1990,
+            "coins": 980
+        }
+    ],
+    "evolution": [
+        {
+            "day": "D1",
+            "Leii": 42,
+            "Lupii": 30,
+            "Ursii": 10
+        },
+        {
+            "day": "D2",
+            "Leii": 80,
+            "Lupii": 20,
+            "Ursii": 90
+        },
+        {
+            "day": "D3",
+            "Leii": 300,
+            "Lupii": 210,
+            "Ursii": 80
+        },
+        {
+            "day": "D4",
+            "Leii": 10,
+            "Lupii": 10,
+            "Ursii": 10
+        },
+        {
+            "day": "D5",
+            "Leii": 10,
+            "Lupii": 10,
+            "Ursii": 10
+        },
+        {
+            "day": "Azi",
+            "Leii": 40,
+            "Lupii": 30,
+            "Ursii": 50
+        }
+    ],
+    "activities": [
+        {
+            "id": 1,
+            "name": "Tir cu Arcul",
+            "location": "North Field",
+            "time": "9:00",
+            "icon": "🎯",
+            "pts": 80,
+            "rules": "Fiecare echipă are 3 runde. Fiecare jucător trage 3 săgeți. Bulseye = 10 pts, inel mijlociu = 5 pts, inel exterior = 2 pts. Câștigă echipa cu cel mai mare total."
+        },
+        {
+            "id": 2,
+            "name": "Kayaking",
+            "location": "Lake Shore",
+            "time": "11:00",
+            "icon": "🚣",
+            "pts": 120,
+            "rules": "Cursă de viteză pe 200m. Ordinea de sosire decide punctele: 1st = 120, 2nd = 80, 3rd = 50. Penalizare de 10 pts pentru depășirea balizelor."
+        },
+        {
+            "id": 3,
+            "name": "Escaladă",
+            "location": "Granite Wall",
+            "time": "14:00",
+            "icon": "🧗",
+            "pts": 100,
+            "rules": "Fiecare echipă trimite 2 escaladatori. Timp maxim: 5 min per persoană. Puncte pentru înălțimea atinsă (10 pts/metru). Bonus de 20 pts pentru finalizare."
+        },
+        {
+            "id": 4,
+            "name": "Foc de Tabără",
+            "location": "Central Pit",
+            "time": "20:00",
+            "icon": "🔥",
+            "pts": 60,
+            "rules": "Seară de worship și reflecție. Fiecare echipă pregătește un moment creativ (5 min). Voturi din partea tuturor: 1st = 60, 2nd = 40, 3rd = 20 pts."
+        }
+    ],
+    "quickLinks": [
+        {
+            "icon": "music",
+            "label": "Playlist FOC:US CAMP",
+            "sub": "Deschide în Spotify",
+            "bg": "rgba(29,185,84,0.1)",
+            "border": "rgba(29,185,84,0.2)",
+            "dot": "#1db954",
+            "href": "https://open.spotify.com"
+        },
+        {
+            "icon": "shirt",
+            "label": "Merch oficial",
+            "sub": "Vizitează magazinul",
+            "bg": "rgba(232,101,10,0.1)",
+            "border": "rgba(232,101,10,0.2)",
+            "dot": "#e8650a",
+            "href": "https://instagram.com"
+        },
+        {
+            "icon": "instagram",
+            "label": "@focus.camp",
+            "sub": "Instagram oficial",
+            "bg": "rgba(225,48,108,0.1)",
+            "border": "rgba(225,48,108,0.2)",
+            "dot": "#e1306c",
+            "href": "https://instagram.com"
+        }
+    ],
+    "verse": {
+        "reference": "Filipeni 4:13",
+        "text": "Pot totul în Hristos care mă întărește.",
+        "bgImage": "https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxiZWF1dGlmdWwlMjBuYXR1cmUlMjBtb3VudGFpbnMlMjBsYW5kc2NhcGV8ZW58MXx8fHwxNzg0MDQ4MzQ2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    "campInfo": {
+        "dayText": "Ziua 4 din 14",
+        "titlePart1": "FOC",
+        "titleHighlight": ":US",
+        "titlePart2": "CAMP"
+    },
+    "summary": {
+        "title": "Rezumat Mesaj",
+        "text": "Mesajul de astăzi a explorat tema credinței active — credința care nu stă pe loc, ci se pune în mișcare. Dumnezeu nu ne-a chemat să fim spectatori, ci participanți în planul Său. La fel cum focul are nevoie de oxigen pentru a arde, credința noastră are nevoie de acțiune pentru a fi vie. Provocarea zilei: ce pas concret vei face azi din credință?",
+        "speakerInfo": "Speaker: Pas. Andrei · Ziua 4"
+    }
+}

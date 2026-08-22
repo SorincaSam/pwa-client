@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FOC:US CAMP PWA</title>
+    <!-- Google Fonts: Montserrat matches the original design -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#050505">
+    
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lucide Icons for vanilla JS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-theme">
+    <div class="app-wrapper">
+        <!-- Phone Shell Container -->
+        <div class="phone-shell">
+            
+
+
+            <!-- Main Content Area where views are injected -->
+            <div id="view-container" class="view-container">
+                <!-- Content injected by app.js -->
+            </div>
+
+            <!-- Bottom Navigation Tab Bar -->
+            <nav class="bottom-tab-bar">
+                <button class="tab-btn active" data-tab="home">
+                    <div class="icon-box">
+                        <i data-lucide="home"></i>
+                    </div>
+                </button>
+                <button class="tab-btn" data-tab="compass">
+                    <div class="icon-box">
+                        <i data-lucide="compass"></i>
+                    </div>
+                </button>
+                <button class="tab-btn" data-tab="verses">
+                    <div class="icon-box">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

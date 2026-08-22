@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarcă FOC:US CAMP App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#050505">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .download-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 24px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        .bg-glow-massive {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vw;
+            background: radial-gradient(circle, var(--color-leader, #e8650a) 0%, transparent 60%);
+            opacity: 0.15;
+            filter: blur(80px);
+            z-index: 1;
+            pointer-events: none;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.5));
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 32px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        .app-icon::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 32px;
+            background: linear-gradient(135deg, var(--color-leader, #e8650a), transparent);
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .app-title {
+            font-size: 42px;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+        .app-subtitle {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 48px;
+            max-width: 300px;
+            line-height: 1.5;
+        }
+        .btn-install {
+            background: var(--color-leader, #e8650a);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            border-radius: 30px;
+            font-family: var(--font-main);
+            font-weight: 800;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(var(--color-leader-rgb, 232,101,10), 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .btn-install:active {
+            transform: translateY(2px);
+            box-shadow: 0 5px 15px rgba(var(--color-leader-rgb, 232,101,10), 0.4);
+        }
+        .ios-instructions {
+            display: none;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            padding: 24px;
+            max-width: 320px;
+            text-align: left;
+        }
+        .ios-step {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        .ios-step:last-child {
+            margin-bottom: 0;
+        }
+        .step-num {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 14px;
+            color: var(--color-leader, #e8650a);
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <div class="bg-glow-massive"></div>
+    <div class="download-container">
+        <div class="app-icon">
+            <img src="fire@4x 1.png" alt="FOC:US Logo" style="width: 70%; height: 70%; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));">
+        </div>
+        
+        <h1 class="app-title">Instalează<br>Aplicația</h1>
+        <p class="app-subtitle">Ai acces offline la program, clasament, versete și punctaj.</p>
+
+        <!-- Button for Android / Desktop -->
+        <button id="install-btn" class="btn-install hidden">
+            <i data-lucide="download"></i> Descarcă Acum
+        </button>
+
+        <!-- Instructions for iOS Safari -->
+        <div id="ios-instructions" class="ios-instructions">
+            <h3 style="font-size: 16px; font-weight: 800; margin-bottom: 20px; text-align: center;">Cum instalezi pe iPhone (iOS)</h3>
+            <div class="ios-step">
+                <div class="step-num">1</div>
+                <p style="font-size: 14px; color: var(--text-muted);">Apasă pe butonul de <strong>Share</strong> din meniul de jos al Safari <i data-lucide="share" style="width:16px; height:16px; vertical-align: middle; margin-left: 4px;"></i></p>
+            </div>
+            <div class="ios-step">
+                <div class="step-num">2</div>
+                <p style="font-size: 14px; color: var(--text-muted);">Selectează opțiunea <strong>"Add to Home Screen"</strong> <i data-lucide="plus-square" style="width:16px; height:16px; vertical-align: middle; margin-left: 4px;"></i></p>
+            </div>
+            <div class="ios-step">
+                <div class="step-num">3</div>
+                <p style="font-size: 14px; color: var(--text-muted);">Confirmă apăsând <strong>"Add"</strong> în colțul din dreapta sus.</p>
+            </div>
+        </div>
+
+        <a href="index.html" style="margin-top: 40px; color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 2px;">Continuă în browser</a>
+    </div>
+
+    <script>lucide.createIcons();</script>
+    <script type="module" src="download.js"></script>
+</body>
+</html>

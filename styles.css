@@ -1,0 +1,332 @@
+/* Vanilla CSS for FOC:US CAMP PWA */
+:root {
+    --bg-main: #050505;
+    --bg-shell: #0a0a0a;
+    --text-primary: #f5f0eb;
+    --text-muted: #888070;
+    
+    --color-leii: #e8650a;
+    --grad-leii-from: #e8650a;
+    --grad-leii-to: #ff9c50;
+
+    --color-lupii: #e03030;
+    --grad-lupii-from: #b01e1e;
+    --grad-lupii-to: #e03030;
+
+    --color-ursii: #3a7bd5;
+    --grad-ursii-from: #1a4a9a;
+    --grad-ursii-to: #3a7bd5;
+
+    --font-main: 'Montserrat', sans-serif;
+    
+    --color-leader: #e8650a;
+    --color-leader-rgb: 232, 101, 10;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Phone Shell Container */
+.app-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.phone-shell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-shell);
+    overflow: hidden;
+}
+
+
+
+
+
+/* Main View Container */
+.view-container {
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.view-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Bottom Tab Bar */
+.bottom-tab-bar {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 16px 24px;
+    background: linear-gradient(180deg, rgba(10,10,10,0) 0%, #0a0a0a 20%);
+    border-top: 1px solid rgba(var(--color-leader-rgb), 0.12);
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 52px;
+    transition: all 0.2s ease;
+}
+
+.icon-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 40px;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.icon-box svg {
+    width: 20px;
+    height: 20px;
+    color: #888070; /* Brighter inactive color */
+    stroke-width: 1.8;
+    transition: all 0.2s ease;
+}
+
+.tab-btn.active .icon-box {
+    background: linear-gradient(135deg, rgba(var(--color-leader-rgb), 0.25), rgba(var(--color-leader-rgb), 0.08));
+    border: 1px solid rgba(var(--color-leader-rgb), 0.3);
+}
+
+.tab-btn.active .icon-box svg {
+    color: var(--color-leader);
+    stroke-width: 2.5;
+}
+
+/* Utilities for dynamic views */
+.view-section {
+    padding: 0 24px;
+    margin-bottom: 20px;
+}
+.view-section.header-section {
+    padding-top: 8px;
+    padding-bottom: 16px;
+    position: relative;
+}
+.header-bg-glow {
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+    background: radial-gradient(ellipse 200% 120% at 50% -10%, var(--color-leader) 0%, transparent 55%);
+    pointer-events: none;
+}
+
+.section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+/* Cards */
+.card-panel {
+    border-radius: 24px;
+    padding: 20px;
+    background: linear-gradient(145deg, #181818 0%, #101010 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Podium */
+.podium-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
+    min-height: 280px;
+}
+.podium-slot {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    color: inherit;
+}
+.podium-slot:active { opacity: 0.7; }
+.avatar-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+}
+.avatar-box span.emoji {
+    font-size: 24px;
+}
+.rank-badge {
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: #0a0a0a;
+    border: 2px solid #181818;
+}
+.podium-bar {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* Points List */
+.points-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+.points-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.points-team-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.mini-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mini-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.mini-avatar .emoji { font-size: 16px; }
+.progress-track {
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.05);
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease-out;
+}
+
+/* Buttons & Misc */
+.btn-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.placeholder-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Install Banner */
+.hidden { display: none !important; opacity: 0; pointer-events: none; }
+#install-container {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+.install-card {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+.install-card p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.btn-primary {
+    background: var(--color-leader);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+}
