@@ -145,12 +145,14 @@ function renderHome(container) {
             </div>
         </div>
 
+        ${state.evolution && state.evolution.length > 1 ? `
         <div class="view-section">
             <h2 class="section-title">Evoluție Puncte</h2>
             <div class="card-panel">
                 <canvas id="evolutionChart" height="180"></canvas>
             </div>
         </div>
+        ` : ''}
         <div style="height:20px;"></div>
     `;
     
@@ -164,8 +166,10 @@ function renderHome(container) {
         });
     });
 
-    // Initialize Chart
-    setTimeout(initChart, 0);
+    // Initialize Chart if needed
+    if (state.evolution && state.evolution.length > 1) {
+        setTimeout(initChart, 0);
+    }
 }
 
 function initChart() {
