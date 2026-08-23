@@ -310,18 +310,18 @@ function renderExplore(container) {
                                 </div>
                                 <div style="flex:1;">
                                     <p style="font-size:14px; font-weight:700;">${act.name}</p>
-                                    <p style="font-size:12px; color:var(--text-muted); margin-top:2px;">${act.location}</p>
+                                    ${act.location ? `<p style="font-size:12px; color:var(--text-muted); margin-top:2px;">${act.location}</p>` : ''}
                                 </div>
                                 <div style="display:flex; flex-direction:column; align-items:flex-end; gap:6px;">
                                     <div style="padding:4px 10px; border-radius:8px; background:rgba(var(--color-leader-rgb),0.12); color:var(--color-leader); border:1px solid rgba(var(--color-leader-rgb),0.2); font-size:11px; font-weight:700;">
                                         ${act.time}
                                     </div>
                                 </div>
-                                <i data-lucide="${isOpen ? 'chevron-up' : 'chevron-down'}" style="width:16px; height:16px; margin-left:4px; color:${isOpen ? 'var(--color-leader)' : '#555'};"></i>
+                                ${act.rules ? `<i data-lucide="${isOpen ? 'chevron-up' : 'chevron-down'}" style="width:16px; height:16px; margin-left:4px; color:${isOpen ? 'var(--color-leader)' : '#555'};"></i>` : ''}
                             </button>
-                            ${isOpen ? `
+                            ${isOpen && act.rules ? `
                                 <div style="padding:0 16px 16px 16px; border-top:1px solid rgba(var(--color-leader-rgb),0.12);">
-                                    <p class="section-title" style="color:var(--color-leader); margin-top:12px; margin-bottom:8px;">Reguli</p>
+                                    <p class="section-title" style="color:var(--color-leader); margin-top:12px; margin-bottom:8px;">Reguli / Detalii</p>
                                     <p style="font-size:12px; color:var(--text-muted); line-height:1.6;">${act.rules}</p>
                                 </div>
                             ` : ''}

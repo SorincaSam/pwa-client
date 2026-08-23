@@ -45,44 +45,6 @@
             "Ursii": 0
         }
     ],
-    "activities": [
-        {
-            "id": 1,
-            "name": "Tir cu Arcul",
-            "location": "North Field",
-            "time": "9:00",
-            "icon": "🎯",
-            "pts": 80,
-            "rules": "Fiecare echipă are 3 runde. Fiecare jucător trage 3 săgeți. Bulseye = 10 pts, inel mijlociu = 5 pts, inel exterior = 2 pts. Câștigă echipa cu cel mai mare total."
-        },
-        {
-            "id": 2,
-            "name": "Kayaking",
-            "location": "Lake Shore",
-            "time": "11:00",
-            "icon": "🚣",
-            "pts": 120,
-            "rules": "Cursă de viteză pe 200m. Ordinea de sosire decide punctele: 1st = 120, 2nd = 80, 3rd = 50. Penalizare de 10 pts pentru depășirea balizelor."
-        },
-        {
-            "id": 3,
-            "name": "Escaladă",
-            "location": "Granite Wall",
-            "time": "14:00",
-            "icon": "🧗",
-            "pts": 100,
-            "rules": "Fiecare echipă trimite 2 escaladatori. Timp maxim: 5 min per persoană. Puncte pentru înălțimea atinsă (10 pts/metru). Bonus de 20 pts pentru finalizare."
-        },
-        {
-            "id": 4,
-            "name": "Foc de Tabără",
-            "location": "Central Pit",
-            "time": "20:00",
-            "icon": "🔥",
-            "pts": 60,
-            "rules": "Seară de worship și reflecție. Fiecare echipă pregătește un moment creativ (5 min). Voturi din partea tuturor: 1st = 60, 2nd = 40, 3rd = 20 pts."
-        }
-    ],
     "quickLinks": [
         {
             "icon": "music",
@@ -112,21 +74,59 @@
             "href": "https://instagram.com"
         }
     ],
-    "verse": {
-        "reference": "Filipeni 4:13",
-        "text": "Pot totul în Hristos care mă întărește.",
-        "bgImage": "https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxiZWF1dGlmdWwlMjBuYXR1cmUlMjBtb3VudGFpbnMlMjBsYW5kc2NhcGV8ZW58MXx8fHwxNzg0MDQ4MzQ2fDA&ixlib=rb-4.1.0&q=80&w=1080"
-    },
     "campInfo": {
-        "dayText": "Ziua 4 din 14",
+        "dayText": "Ziua 1 - Luni",
         "titlePart1": "FOC",
         "titleHighlight": ":US",
         "titlePart2": "CAMP"
     },
+    "verse": {
+        "reference": "",
+        "text": "",
+        "bgImage": "https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?q=80&w=1080"
+    },
     "summary": {
         "show": false,
         "title": "Rezumat Mesaj",
-        "text": "Mesajul de astăzi a explorat tema credinței active — credința care nu stă pe loc, ci se pune în mișcare. Dumnezeu nu ne-a chemat să fim spectatori, ci participanți în planul Său. La fel cum focul are nevoie de oxigen pentru a arde, credința noastră are nevoie de acțiune pentru a fi vie. Provocarea zilei: ce pas concret vei face azi din credință?",
-        "speakerInfo": "Speaker: Pas. Andrei · Ziua 4"
-    }
+        "text": "",
+        "speakerInfo": ""
+    },
+    "activities": [
+        {
+            "id": 1,
+            "name": "Plecare din incinta Prodcomplex",
+            "time": "10:30",
+            "icon": "🚌"
+        },
+        {
+            "id": 2,
+            "name": "Sosire + Check-in",
+            "time": "12:30",
+            "icon": "🏨"
+        },
+        {
+            "id": 3,
+            "name": "Prânz",
+            "time": "13:30",
+            "icon": "🍲"
+        },
+        {
+            "id": 4,
+            "name": "Timp cu echipa",
+            "time": "14:30",
+            "icon": "👥"
+        },
+        {
+            "id": 5,
+            "name": "Activități",
+            "time": "15:30",
+            "icon": "🎯"
+        },
+        {
+            "id": 6,
+            "name": "Cina",
+            "time": "18:30",
+            "icon": "🍽️"
+        }
+    ]
 }
