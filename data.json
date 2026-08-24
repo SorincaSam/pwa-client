@@ -9,7 +9,7 @@
             "color": "#e8650a",
             "gradFrom": "#e8650a",
             "gradTo": "#ff9c50",
-            "points": 0,
+            "points": 16,
             "coins": 0
         },
         {
@@ -21,7 +21,7 @@
             "color": "#e03030",
             "gradFrom": "#b01e1e",
             "gradTo": "#e03030",
-            "points": 0,
+            "points": 19,
             "coins": 0
         },
         {
@@ -33,7 +33,7 @@
             "color": "#3a7bd5",
             "gradFrom": "#1a4a9a",
             "gradTo": "#3a7bd5",
-            "points": 0,
+            "points": 17,
             "coins": 0
         }
     ],
@@ -81,8 +81,8 @@
         "titlePart2": "CAMP"
     },
     "verse": {
-        "reference": "1 Timotei 4:12 (NTR)",
-        "text": "Nimeni să nu-ți disprețuiască tinerețea, ci fii un exemplu pentru credincioși: în vorbire, în purtare, în dragoste, în credință și în curăție.",
+        "reference": "Isaia 41:10 (NTR)",
+        "text": "Nu te teme, căci Eu sunt cu tine; nu te uita cu îngrijorare, căci Eu sunt Dumnezeul tău.",
         "bgImage": "https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?q=80&w=1080"
     },
     "summary": {
