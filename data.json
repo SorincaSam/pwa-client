@@ -10,7 +10,7 @@
             "gradFrom": "#e8650a",
             "gradTo": "#ff9c50",
             "points": 16,
-            "coins": 0
+            "coins": 23
         },
         {
             "id": 2,
@@ -22,7 +22,7 @@
             "gradFrom": "#b01e1e",
             "gradTo": "#e03030",
             "points": 19,
-            "coins": 0
+            "coins": 13
         },
         {
             "id": 3,
@@ -34,7 +34,7 @@
             "gradFrom": "#1a4a9a",
             "gradTo": "#3a7bd5",
             "points": 17,
-            "coins": 0
+            "coins": 37
         }
     ],
     "evolution": [
