@@ -75,14 +75,14 @@
         }
     ],
     "campInfo": {
-        "dayText": "Ziua 1 - Luni",
+        "dayText": "Ziua 2 - Marți",
         "titlePart1": "FOC",
         "titleHighlight": ":US",
         "titlePart2": "CAMP"
     },
     "verse": {
-        "reference": "1 Timotei 4:12 (NTR)",
-        "text": "Nimeni să nu-ți disprețuiască tinerețea, ci fii un exemplu pentru credincioși: în vorbire, în purtare, în dragoste, în credință și în curăție.",
+        "reference": "Proverbe 3:5 (NTR)",
+        "text": "Încrede-te în Domnul din toată inima ta și nu te bizui pe propria ta pricepere!",
         "bgImage": "https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?q=80&w=1080"
     },
     "summary": {
@@ -94,39 +94,57 @@
     "activities": [
         {
             "id": 1,
-            "name": "Plecare din incinta Prodcomplex",
-            "time": "10:30",
-            "icon": "🚌"
+            "name": "Înviorare",
+            "time": "08:00",
+            "icon": "🏃"
         },
         {
             "id": 2,
-            "name": "Sosire + Check-in",
-            "time": "12:30",
-            "icon": "🏕️"
+            "name": "Mic dejun",
+            "time": "08:30",
+            "icon": "☕"
         },
         {
             "id": 3,
+            "name": "Discuții de dimineață",
+            "time": "09:30",
+            "icon": "🗣️"
+        },
+        {
+            "id": 4,
+            "name": "Jocuri + Activități",
+            "time": "10:30",
+            "icon": "🎲"
+        },
+        {
+            "id": 5,
             "name": "Prânz",
             "time": "13:30",
             "icon": "🍲"
         },
         {
-            "id": 4,
-            "name": "Timp cu echipa",
+            "id": 6,
+            "name": "Pauză",
             "time": "14:30",
-            "icon": "👥"
+            "icon": "🛏️"
         },
         {
-            "id": 5,
-            "name": "Activități",
+            "id": 7,
+            "name": "Jocuri + Activități",
             "time": "15:30",
             "icon": "🎯"
         },
         {
-            "id": 6,
+            "id": 8,
             "name": "Cina",
             "time": "18:30",
             "icon": "🍽️"
+        },
+        {
+            "id": 9,
+            "name": "Program de seară",
+            "time": "20:00",
+            "icon": "🌙"
         }
     ]
 }
