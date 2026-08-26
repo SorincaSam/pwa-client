@@ -9,8 +9,8 @@
             "color": "#e8650a",
             "gradFrom": "#e8650a",
             "gradTo": "#ff9c50",
-            "points": 16,
-            "coins": 23
+            "points": 39,
+            "coins": 69
         },
         {
             "id": 2,
@@ -21,8 +21,8 @@
             "color": "#e03030",
             "gradFrom": "#b01e1e",
             "gradTo": "#e03030",
-            "points": 19,
-            "coins": 13
+            "points": 50,
+            "coins": 69
         },
         {
             "id": 3,
@@ -33,16 +33,22 @@
             "color": "#3a7bd5",
             "gradFrom": "#1a4a9a",
             "gradTo": "#3a7bd5",
-            "points": 17,
-            "coins": 37
+            "points": 43,
+            "coins": 3
         }
     ],
     "evolution": [
         {
             "day": "Ziua 1",
-            "Leii": 0,
-            "Lupii": 0,
-            "Ursii": 0
+            "Leii": 16,
+            "Lupii": 19,
+            "Ursii": 17
+        },
+        {
+            "day": "Ziua 2",
+            "Leii": 39,
+            "Lupii": 50,
+            "Ursii": 43
         }
     ],
     "quickLinks": [
@@ -75,14 +81,14 @@
         }
     ],
     "campInfo": {
-        "dayText": "Ziua 2 - Marți",
+        "dayText": "Ziua 3 - Miercuri",
         "titlePart1": "FOC",
         "titleHighlight": ":US",
         "titlePart2": "CAMP"
     },
     "verse": {
-        "reference": "Proverbe 3:5 (NTR)",
-        "text": "Încrede-te în Domnul din toată inima ta și nu te bizui pe propria ta pricepere!",
+        "reference": "Ieremia 29:11 (NTR)",
+        "text": "Căci Eu știu gândurile pe care le am cu privire la voi, zice Domnul, gânduri de pace, și nu de nenorocire, ca să vă dau un viitor și o nădejde.",
         "bgImage": "https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?q=80&w=1080"
     },
     "summary": {
@@ -94,26 +100,26 @@
     "activities": [
         {
             "id": 1,
-            "name": "Înviorare",
-            "time": "08:00",
-            "icon": "🏃"
-        },
-        {
-            "id": 2,
             "name": "Mic dejun",
             "time": "08:30",
             "icon": "☕"
         },
         {
-            "id": 3,
+            "id": 2,
             "name": "Discuții de dimineață",
             "time": "09:30",
             "icon": "🗣️"
         },
         {
+            "id": 3,
+            "name": "Timp cu echipa",
+            "time": "10:30",
+            "icon": "👥"
+        },
+        {
             "id": 4,
             "name": "Jocuri + Activități",
-            "time": "10:30",
+            "time": "11:30",
             "icon": "🎲"
         },
         {
