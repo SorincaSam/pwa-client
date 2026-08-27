@@ -9,8 +9,8 @@
             "color": "#e8650a",
             "gradFrom": "#e8650a",
             "gradTo": "#ff9c50",
-            "points": 39,
-            "coins": 69
+            "points": 57,
+            "coins": 66
         },
         {
             "id": 2,
@@ -21,8 +21,8 @@
             "color": "#e03030",
             "gradFrom": "#b01e1e",
             "gradTo": "#e03030",
-            "points": 50,
-            "coins": 77
+            "points": 67,
+            "coins": 31
         },
         {
             "id": 3,
@@ -33,8 +33,8 @@
             "color": "#3a7bd5",
             "gradFrom": "#1a4a9a",
             "gradTo": "#3a7bd5",
-            "points": 43,
-            "coins": 3
+            "points": 62,
+            "coins": 23
         }
     ],
     "evolution": [
@@ -49,6 +49,12 @@
             "Leii": 39,
             "Lupii": 50,
             "Ursii": 43
+        },
+        {
+            "day": "Ziua 3",
+            "Leii": 57,
+            "Lupii": 67,
+            "Ursii": 62
         }
     ],
     "quickLinks": [
@@ -81,14 +87,14 @@
         }
     ],
     "campInfo": {
-        "dayText": "Ziua 3 - Miercuri",
+        "dayText": "Ziua 4 - Joi",
         "titlePart1": "FOC",
         "titleHighlight": ":US",
         "titlePart2": "CAMP"
     },
     "verse": {
-        "reference": "Ieremia 29:11 (NTR)",
-        "text": "Căci Eu știu gândurile pe care le am cu privire la voi, zice Domnul, gânduri de pace, și nu de nenorocire, ca să vă dau un viitor și o nădejde.",
+        "reference": "1 Corinteni 16:14 (NTR)",
+        "text": "Tot ce faceți să fie făcut cu dragoste!",
         "bgImage": "https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?q=80&w=1080"
     },
     "summary": {
@@ -100,54 +106,60 @@
     "activities": [
         {
             "id": 1,
+            "name": "Înviorare",
+            "time": "08:00",
+            "icon": "🏃"
+        },
+        {
+            "id": 2,
             "name": "Mic dejun",
             "time": "08:30",
             "icon": "☕"
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Discuții de dimineață",
             "time": "09:30",
             "icon": "🗣️"
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "Timp cu echipa",
             "time": "10:30",
             "icon": "👥"
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "Jocuri + Activități",
             "time": "11:30",
             "icon": "🎲"
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "Prânz",
             "time": "13:30",
             "icon": "🍲"
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "Pauză",
             "time": "14:30",
             "icon": "🛏️"
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "Jocuri + Activități",
             "time": "15:30",
             "icon": "🎯"
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "Cina",
             "time": "18:30",
             "icon": "🍽️"
         },
         {
-            "id": 9,
+            "id": 10,
             "name": "Program de seară",
             "time": "20:00",
             "icon": "🌙"
